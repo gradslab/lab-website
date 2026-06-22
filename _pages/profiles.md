@@ -1,28 +1,64 @@
 ---
-layout: profiles
+layout: page
 permalink: /people/
 title: people
-description: members of the lab or group
+description: The people of the GRaDS Lab at NJIT.
 nav: true
-nav_order: 7
-
-profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+nav_order: 2
 ---
+
+<!-- _pages/profiles.md — People page.
+     Photos use the placeholder assets/img/prof_pic.jpg. Replace each `src` with a
+     real headshot in assets/img/ as you collect them. -->
+
+<div class="people-section">
+
+<h2>Principal Investigator</h2>
+<div class="people-grid">
+  <div class="person-card">
+    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Dr. Adeel Akhtar">
+    <div class="name"><a href="https://adeelakhtar.com/" target="_blank" rel="noopener">Dr. Adeel Akhtar</a></div>
+    <div class="role">Principal Investigator · Assistant Professor, MIE</div>
+    <div class="blurb">
+      Directs the GRaDS Lab. Research in mobile and aerial robotics, nonlinear systems,
+      and geometric &amp; hybrid control. Previously postdoc at UC Santa Cruz, KAUST,
+      University of Toronto, and York University. PhD (Mechanical &amp; Mechatronics
+      Eng.) and MASc (ECE), University of Waterloo; BE (Mechatronics), NUST.
+    </div>
+  </div>
+</div>
+
+<h2>PhD Students</h2>
+<div class="people-grid">
+  <div class="person-card">
+    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Hamza Mahmood">
+    <div class="name"><a href="https://hamzamgeocontrol.github.io/" target="_blank" rel="noopener">Hamza Mahmood</a></div>
+    <div class="role">PhD Candidate, Mechanical Engineering</div>
+    <div class="blurb">
+      Geometric control of stochastic dynamical systems, studied through differential
+      geometry. MSc in Mathematics (LUMS); BE in Electrical Engineering (NUST).
+    </div>
+  </div>
+  <div class="person-card">
+    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Hamza Tariq">
+    <div class="name"><a href="https://htariq1426.github.io/" target="_blank" rel="noopener">Hamza Tariq</a></div>
+    <div class="role">PhD Candidate, Mechanical &amp; Industrial Engineering</div>
+    <div class="blurb">
+      Nonlinear and optimization-based control for safety-critical autonomous systems —
+      feedback linearization, control barrier functions, and decentralized multi-robot
+      coordination. BE (Mechatronics) and MS in Electrical Engineering (Control), NUST.
+    </div>
+  </div>
+</div>
+
+<h2>Undergraduate Students</h2>
+<div class="people-grid">
+  <div class="person-card">
+    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Undergraduate student">
+    <div class="name">Undergraduate Researcher</div>
+    <div class="role">Undergraduate Student</div>
+    <div class="blurb">Placeholder — add the student's name and research focus.</div>
+  </div>
+</div>
+
+</div>

@@ -2,21 +2,19 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+title: GRaDS Lab # the website title (shown in the navbar and as the homepage heading)
+first_name: Adeel
+middle_name:
+last_name: Akhtar
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  The best way to reach the lab.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Geometry, Robotics, and Dynamical Systems (GRaDS) Lab at NJIT, led by Dr. Adeel Akhtar.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+  GRaDS Lab, New Jersey Institute of Technology.
+keywords: robotics, control theory, dynamical systems, geometric control, NJIT, GRaDS lab
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://alshedivat.github.io # the base hostname & protocol for your site
 baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -27,6 +25,11 @@ back_to_top: true # set to false to disable the back to top button
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
+
+# Site accent color: RED.
+# al-folio's accent is a CSS variable (--global-theme-color), not a _config.yml key.
+# It is set to red in assets/css/main.scss (the local override of the gem's main.scss),
+# for both light and dark mode. Edit the --grads-red / --global-theme-color values there.
 
 # repo color theme
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
@@ -341,8 +344,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Akhtar, Mahmood, Tariq]
+  first_name: [Adeel, Hamza, Hamza]
 
   style: apa
   locale: en

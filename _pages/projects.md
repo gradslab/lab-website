@@ -2,64 +2,47 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Projects organized by research area.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 1
 horizontal: false
 ---
 
-<!-- pages/projects.md -->
+<!-- _pages/projects.md — projects grouped by the lab's three research areas.
+     Each section has an `id` so the homepage cards can deep-link to it
+     (e.g. /projects/#geometric-control). Projects live in _projects/ and are
+     filtered by their `category` (geometric-control | safe-autonomy | learning-dynamics). -->
+
 <div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
+
+<!-- ===================== Geometric Control & Estimation ===================== -->
+<h2 id="geometric-control" class="research-section-title">Geometric &amp; Hybrid Control</h2>
+<p class="research-section-intro">Geometric and hybrid controllers for robots and drones on manifolds and Lie groups.</p>
+<div class="row row-cols-1 row-cols-md-3">
+  {% assign gc = site.projects | where: "category", "geometric-control" | sort: "importance" %}
+  {% for project in gc %}
+    {% include projects.liquid %}
   {% endfor %}
+</div>
 
-{% else %}
+<!-- ===================== Safe & Reliable Autonomy ===================== -->
+<h2 id="safe-autonomy" class="research-section-title">Safe &amp; Reliable Autonomy</h2>
+<p class="research-section-intro">Control barrier functions, feedback linearization, and decentralized coordination for dependable autonomy.</p>
+<div class="row row-cols-1 row-cols-md-3">
+  {% assign sa = site.projects | where: "category", "safe-autonomy" | sort: "importance" %}
+  {% for project in sa %}
+    {% include projects.liquid %}
+  {% endfor %}
+</div>
 
-<!-- Display projects without categories -->
+<!-- ===================== Learning & Dynamical Systems ===================== -->
+<h2 id="learning-dynamics" class="research-section-title">Stochastic &amp; Learning Dynamics</h2>
+<p class="research-section-intro">Geometric control of stochastic dynamical systems and learning-based methods for control.</p>
+<div class="row row-cols-1 row-cols-md-3">
+  {% assign ld = site.projects | where: "category", "learning-dynamics" | sort: "importance" %}
+  {% for project in ld %}
+    {% include projects.liquid %}
+  {% endfor %}
+</div>
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
 </div>

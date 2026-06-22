@@ -1,0 +1,219 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+# -----------------------------------------------------------------------------
+# LOCAL OVERRIDE of al_folio_core's assets/css/main.scss.
+# Jekyll compiles this (local file shadows the gem-owned file) to assets/css/main.css.
+# It re-uses every gem partial unchanged, then appends GRaDS Lab customizations:
+#   1. red theme color (overrides the gem default purple/cyan), and
+#   2. homepage / people component styles (hero, carousel, research cards).
+# If you `bundle update`, re-sync the @use block below with the gem's main.scss.
+# -----------------------------------------------------------------------------
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials. */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* =============================================================================
+   GRaDS Lab — theme color (red) + custom components
+   ========================================================================== */
+
+/* ---- 1. Red theme color (light + dark) ---- */
+:root {
+  --grads-red: #c8102e;
+  --global-theme-color: #c8102e;
+  --global-hover-color: #c8102e;
+}
+
+html[data-theme="dark"] {
+  --grads-red: #ff5c5c;
+  --global-theme-color: #ff5c5c;
+  --global-hover-color: #ff5c5c;
+}
+
+/* ---- 2. Homepage hero (mission statement) ---- */
+.grads-hero {
+  margin: 0.5rem 0 1.5rem;
+}
+.grads-hero .lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--global-text-color);
+  max-width: 46rem;
+}
+
+/* ---- Navbar logo (wordmark, shown on every page) ---- */
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* ---- Projects page: research-area section headings (deep-link targets) ---- */
+.research-section-title {
+  scroll-margin-top: 80px; /* keeps the heading clear of the fixed navbar on #anchor jumps */
+  border-bottom: 2px solid var(--grads-red);
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+}
+.research-section-intro {
+  color: var(--global-text-color-light);
+  margin-bottom: 1.25rem;
+}
+
+/* ---- 3. Auto-cycling image carousel ---- */
+.grads-carousel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+  margin: 1.5rem 0 2.5rem;
+  background: #000;
+}
+.grads-carousel .slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.grads-carousel .slide.active {
+  opacity: 1;
+}
+.grads-carousel .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.grads-carousel .dots {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.grads-carousel .dots button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+}
+.grads-carousel .dots button.active {
+  background: var(--grads-red);
+}
+
+/* ---- 4. Research-area cards ---- */
+.research-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+@media (max-width: 768px) {
+  .research-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.research-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background: var(--global-card-bg-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid var(--grads-red);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.research-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+}
+.research-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.research-card .body {
+  padding: 1rem 1.1rem 1.25rem;
+}
+.research-card h3 {
+  margin: 0.2rem 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--grads-red);
+}
+.research-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--global-text-color-light);
+}
+
+/* ---- 5. People grid ---- */
+.people-section h2 {
+  border-bottom: 2px solid var(--grads-red);
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 1.75rem;
+  margin: 1.5rem 0 2rem;
+}
+.person-card {
+  text-align: center;
+}
+.person-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+.person-card .name {
+  font-weight: 600;
+  margin-top: 0.6rem;
+}
+.person-card .role {
+  color: var(--grads-red);
+  font-size: 0.85rem;
+}
+.person-card .blurb {
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.2rem;
+}
