@@ -14,7 +14,7 @@ footer_text: >
   GRaDS Lab, New Jersey Institute of Technology.
 keywords: robotics, control theory, dynamical systems, geometric control, NJIT, GRaDS lab
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.svg # browser-tab favicon — square brand mark in /assets/img/ (logo is a wide wordmark, so a square version is used here)
 
 url: https://alshedivat.github.io # the base hostname & protocol for your site
 baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root

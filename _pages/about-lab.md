@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/
-title: about
+title: About
 description: About the GRaDS Lab.
 nav: true
 nav_order: 5

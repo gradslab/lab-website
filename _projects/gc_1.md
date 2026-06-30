@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Control on Lie Groups
-description: Geometric controllers for rigid-body and aerial systems on SO(3) and SE(3).
+title: Transverse Feedback Linearization for Quadrotors
+description: Quasi-static transverse feedback linearization for quadrotor path following.
 img: assets/img/1.jpg
 importance: 1
 category: geometric-control

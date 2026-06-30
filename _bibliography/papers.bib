@@ -1,23 +1,74 @@
 ---
 ---
 
-@article{mahmood2026schrodinger,
-  abbr      = {arXiv},
-  title     = {Schr{\"o}dinger Bridge Over a Compact Connected Lie Group},
-  author    = {Mahmood, Hamza and Halder, A. and Akhtar, Adeel},
-  journal   = {arXiv preprint},
-  year      = {2026},
-  abstract  = {Preprint. Replace this abstract with the paper's abstract and add an `arxiv` field with the arXiv id.}
+% GRaDS Lab publications (2025–present).
+% Supported buttons (al-folio _layouts/bib.liquid):
+%   abstract = {...}      -> "Abstract" button
+%   arxiv    = {2502.07136}        -> "arXiv" button (bare id, no "arXiv:" prefix)
+%   bibtex_show = {true}  -> "Bibtex" button
+%   code     = {https://github.com/...}   -> "Code" button
+%   video    = {https://youtu.be/...}     -> "Video" button (add the lab YouTube link)
+%   selected = {true}     -> featured paper
+% Add `video = {...}` to any entry below once the animation is on the lab YouTube channel.
+
+@article{akhtar2026lyapunov,
+  abbr        = {L-CSS},
+  bibtex_show = {true},
+  selected    = {true},
+  title       = {Learning Neural Maximal Lyapunov Functions on {SO}(n)},
+  author      = {Akhtar, Adeel and Barreau, Matthieu},
+  journal     = {IEEE Control Systems Letters (L-CSS)},
+  year        = {2026},
+  arxiv       = {2606.19669},
+  abstract    = {Establishing stability guarantees for dynamical systems on Lie groups is a fundamental challenge, as classical Lyapunov methods developed for Euclidean spaces do not directly transfer to curved geometries. In this paper, we propose a framework for learning maximal Lyapunov functions for systems evolving on the special orthogonal group SO(n). Theoretically, we introduce a neural Lyapunov architecture based on the logarithmic map with proven approximation capabilities, and we formulate the learning problem via a Zubov-type characterization of the maximal region of attraction. A key technical contribution is the derivation of explicit, numerically tractable formulas for the derivative of the logarithmic map, enabling training through a two-phase algorithm that balances computational efficiency and accuracy. Empirically, we validate the approach on a low-dimensional nonlinear system.}
 }
 
 @inproceedings{tariq2026relaxed,
   abbr        = {CCTA},
   bibtex_show = {true},
-  title       = {A Relaxed Quadratic Program Based Framework for Trajectory Tracking of Unicycle Robots with Singularity Avoidance},
+  selected    = {true},
+  title       = {A Relaxed Quadratic-Program-based Framework for Trajectory Tracking of Unicycle Robots with Singularity Avoidance},
   author      = {Tariq, Hamza and Ali, Usman and Akhtar, Adeel},
   booktitle   = {10th IEEE Conference on Control Technology and Applications (CCTA)},
   year        = {2026},
-  note        = {Accepted}
+  note        = {Accepted},
+  arxiv       = {2606.23355},
+  code        = {https://gradslab.github.io/DFL_QP_Unicycle/},
+  abstract    = {Dynamic feedback linearization (DFL) is a classical technique for trajectory tracking of unicycle-type mobile robots, but the resulting DFL-based controller becomes singular when the linear velocity vanishes, rendering standard DFL-based controllers unsuitable for stop-and-reverse maneuvers. This paper proposes a quadratic-program (QP)-based optimal control framework that avoids this singularity, while establishing local Lipschitz continuity of the resulting feedback law. Our approach reformulates the DFL constraints as an equality-constrained QP with a slack variable, ensuring feasibility for all states and reference signals, including at points where the robot's velocity vanishes. By introducing slack variables and tunable parameters, we demonstrate that the singular configuration can be avoided for a large class of reference trajectories. The effectiveness of the proposed approach for trajectory tracking is demonstrated through ROS 2-Gazebo simulations on a TurtleBot3 Waffle robot.}
+}
+
+@article{allawati2026pathfollowing,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  title       = {Path-following Control of a Quadrotor using Quasi-Static Transverse Feedback Linearization},
+  author      = {Al Lawati, Mohamed and Akhtar, Adeel},
+  journal     = {arXiv preprint},
+  year        = {2026},
+  arxiv       = {2606.23218},
+  code        = {https://gitlab.com/a5akhtar/quasistatic-tfl-uav/},
+  abstract    = {We propose a quasi-static transverse feedback linearization (QSTFL) controller for a quadrotor to follow a prescribed geometric path, rather than a time-parameterized trajectory. In contrast to existing dynamic-feedback approaches, the controller does not introduce additional controller states. The thrust input is computed algebraically from the current state, eliminating the need for thrust-derivative measurements and numerical integration. The proposed design renders the path-following manifold invariant, ensuring that trajectories initialized on the path remain on it for all future time, while simultaneously regulating tangential velocity and yaw. We establish a diffeomorphic coordinate transformation and prove local exponential stability of the path-following manifold. In addition, closed-form expressions are derived for the thrust and torque inputs. Compared with dynamic-feedback constructions, the controller requires inversion of only a 3x3 decoupling matrix rather than a 4x4 one, leading to a simpler control law and reduced computational complexity. Numerical simulations demonstrate the effectiveness of the proposed method.}
+}
+
+@article{mahmood2026geometric,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  title       = {A Geometric Solution of the Schr{\"o}dinger Bridge Problem on {SO}(2) via Stochastic Optimal Control},
+  author      = {Mahmood, Hamza and Akhtar, Adeel},
+  journal     = {arXiv preprint},
+  year        = {2026},
+  arxiv       = {2606.22690},
+  code        = {https://gitlab.com/a5akhtar/sbp},
+  abstract    = {We present a geometric coordinate-free solution to the isotropic Schrodinger bridge problem (SBP) for the kinematic equation on the Lie group SO(2). We consider the angular velocity of the system as the control input and assume that the given initial and terminal state probability density functions defined on SO(2) in our SBP are continuous and strictly positive. We solve the SBP by proving the existence and uniqueness of a solution to the so-called Schrodinger system of equations on SO(2), by showing that a fixed-point recursion is contractive in a complete metric space with respect to the Hilbert's projective metric. The geometric controller thus designed only uses the intrinsic geometric structure of SO(2) and does not embed it in the Euclidean plane to achieve the optimal density control. The numerical simulation verifies the validity of the theoretical construction of the Schrodinger bridge.}
+}
+
+@article{mahmood2026schrodinger,
+  abbr        = {L-CSS},
+  bibtex_show = {true},
+  title       = {Schr{\"o}dinger Bridge Over a Compact Connected Lie Group},
+  author      = {Mahmood, Hamza and Halder, A. and Akhtar, Adeel},
+  journal     = {IEEE Control Systems Letters (L-CSS)},
+  year        = {2026},
+  abstract    = {To be added.}
 }
 
 @inproceedings{mahmood2025path,
@@ -27,5 +78,27 @@
   title       = {Path Invariance of a Quadrotor System under Cyber Attacks with Theoretical Guarantees},
   author      = {Mahmood, Hamza and Ali, Usman and Akhtar, Adeel},
   booktitle   = {2025 American Control Conference (ACC)},
-  year        = {2025}
+  year        = {2025},
+  abstract    = {To be added.}
+}
+
+@article{wang2025safe,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  title       = {A Safe Hybrid Control Framework for Car-like Robot with Guaranteed Global Path-Invariance using a Control Barrier Function},
+  author      = {Wang, Nan and Akhtar, Adeel and Sanfelice, Ricardo G.},
+  journal     = {arXiv preprint},
+  year        = {2025},
+  arxiv       = {2502.07136},
+  abstract    = {This work proposes a hybrid framework for car-like robots with obstacle avoidance, global convergence, and safety, where safety is interpreted as path invariance, namely, once the robot converges to the path, it never leaves the path. Given a priori obstacle-free feasible path where obstacles can be around the path, the task is to avoid obstacles while reaching the path and then staying on the path without leaving it. The problem is solved in two stages. Firstly, we define a "tight" obstacle-free neighborhood along the path and design a local controller to ensure convergence to the path and path invariance. The control barrier function technology is involved in the control design to steer the system away from its singularity points, where the local path invariant controller is not defined. Secondly, we design a hybrid control framework that integrates this local path-invariant controller with any global tracking controller from the existing literature without path invariance guarantee, ensuring convergence from any position to the desired path, namely, global convergence. This framework guarantees path invariance and robustness to sensor noise. Detailed simulation results affirm the effectiveness of the proposed scheme.}
+}
+
+@inproceedings{aldosari2025acceleration,
+  abbr        = {AIAA},
+  bibtex_show = {true},
+  title       = {Acceleration Feedback Control for Atmospheric Reduced Gravity Flights},
+  author      = {Aldosari, M. Nasser and Chen, Y. H. and Akhtar, Adeel and Feron, Eric},
+  booktitle   = {AIAA SCITECH 2025 Forum},
+  year        = {2025},
+  abstract    = {To be added.}
 }

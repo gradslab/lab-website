@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Projects organized by research area.
 nav: true
@@ -16,8 +16,8 @@ horizontal: false
 <div class="projects">
 
 <!-- ===================== Geometric Control & Estimation ===================== -->
-<h2 id="geometric-control" class="research-section-title">Geometric &amp; Hybrid Control</h2>
-<p class="research-section-intro">Geometric and hybrid controllers for robots and drones on manifolds and Lie groups.</p>
+<h2 id="geometric-control" class="research-section-title">Geometric &amp; Nonlinear Control</h2>
+<p class="research-section-intro">Controllers built on the geometry of motion — feedback linearization, transverse feedback linearization, and control on Lie groups and manifolds.</p>
 <div class="row row-cols-1 row-cols-md-3">
   {% assign gc = site.projects | where: "category", "geometric-control" | sort: "importance" %}
   {% for project in gc %}
@@ -26,8 +26,8 @@ horizontal: false
 </div>
 
 <!-- ===================== Safe & Reliable Autonomy ===================== -->
-<h2 id="safe-autonomy" class="research-section-title">Safe &amp; Reliable Autonomy</h2>
-<p class="research-section-intro">Control barrier functions, feedback linearization, and decentralized coordination for dependable autonomy.</p>
+<h2 id="safe-autonomy" class="research-section-title">Safe &amp; Path-Invariant Autonomy</h2>
+<p class="research-section-intro">Safety-critical and path-invariant control — control barrier functions, hybrid control, and robustness to disturbances and cyber attacks.</p>
 <div class="row row-cols-1 row-cols-md-3">
   {% assign sa = site.projects | where: "category", "safe-autonomy" | sort: "importance" %}
   {% for project in sa %}
@@ -36,8 +36,8 @@ horizontal: false
 </div>
 
 <!-- ===================== Learning & Dynamical Systems ===================== -->
-<h2 id="learning-dynamics" class="research-section-title">Stochastic &amp; Learning Dynamics</h2>
-<p class="research-section-intro">Geometric control of stochastic dynamical systems and learning-based methods for control.</p>
+<h2 id="learning-dynamics" class="research-section-title">Stochastic &amp; Learning-Based Control</h2>
+<p class="research-section-intro">Stochastic optimal control and learning for control — Schrödinger bridges on Lie groups and learning Lyapunov certificates for stability.</p>
 <div class="row row-cols-1 row-cols-md-3">
   {% assign ld = site.projects | where: "category", "learning-dynamics" | sort: "importance" %}
   {% for project in ld %}

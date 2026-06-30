@@ -1,9 +1,16 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+# Venue badge colors/links for publication `abbr` fields (see _layouts/bib.liquid).
+"L-CSS":
+  url: https://ieee-cssletters.dei.unipd.it/
+  color: "#00629b"
+"ACC":
+  url: https://acc2025.a2c2.org/
+  color: "#b3001b"
+"CCTA":
+  url: https://ccta2026.ieeecss.org/
+  color: "#c8102e"
+"AIAA":
+  url: https://www.aiaa.org/
+  color: "#003a70"
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"

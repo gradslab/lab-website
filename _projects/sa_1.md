@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Safety-Critical Control
-description: Control barrier functions for safe operation of autonomous systems.
+title: Control Barrier Functions for Safe Robots
+description: Safe, path-invariant control of car-like robots via CBFs and hybrid control.
 img: assets/img/4.jpg
 importance: 1
 category: safe-autonomy

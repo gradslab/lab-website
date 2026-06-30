@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /people/
-title: people
+title: People
 description: The people of the GRaDS Lab at NJIT.
 nav: true
 nav_order: 2
@@ -16,7 +16,7 @@ nav_order: 2
 <h2>Principal Investigator</h2>
 <div class="people-grid">
   <div class="person-card">
-    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Dr. Adeel Akhtar">
+    <img src="{{ '/assets/img/display_pics/adeel_akhtar_dp.png' | relative_url }}" alt="Dr. Adeel Akhtar">
     <div class="name"><a href="https://adeelakhtar.com/" target="_blank" rel="noopener">Dr. Adeel Akhtar</a></div>
     <div class="role">Principal Investigator · Assistant Professor, MIE</div>
     <div class="blurb">
@@ -31,7 +31,7 @@ nav_order: 2
 <h2>PhD Students</h2>
 <div class="people-grid">
   <div class="person-card">
-    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Hamza Mahmood">
+    <img src="{{ '/assets/img/display_pics/Hamza_mahmood_dp.jpg' | relative_url }}" alt="Hamza Mahmood">
     <div class="name"><a href="https://hamzamgeocontrol.github.io/" target="_blank" rel="noopener">Hamza Mahmood</a></div>
     <div class="role">PhD Candidate, Mechanical Engineering</div>
     <div class="blurb">
@@ -40,7 +40,7 @@ nav_order: 2
     </div>
   </div>
   <div class="person-card">
-    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Hamza Tariq">
+    <img src="{{ '/assets/img/display_pics/hamza_tariq_dp.jpeg' | relative_url }}" alt="Hamza Tariq">
     <div class="name"><a href="https://htariq1426.github.io/" target="_blank" rel="noopener">Hamza Tariq</a></div>
     <div class="role">PhD Candidate, Mechanical &amp; Industrial Engineering</div>
     <div class="blurb">
@@ -54,10 +54,13 @@ nav_order: 2
 <h2>Undergraduate Students</h2>
 <div class="people-grid">
   <div class="person-card">
-    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Undergraduate student">
-    <div class="name">Undergraduate Researcher</div>
-    <div class="role">Undergraduate Student</div>
-    <div class="blurb">Placeholder — add the student's name and research focus.</div>
+    <img src="{{ '/assets/img/display_pics/kiran_aman_dp.jpeg' | relative_url }}" alt="Kiran Aman">
+    <div class="name"><a href="https://sites.google.com/view/kiranaman/home" target="_blank" rel="noopener">Kiran Aman</a></div>
+    <div class="role">Undergraduate Researcher, Mechanical Engineering</div>
+    <div class="blurb">
+      Works on robotic mechanism design, machining, and digital fabrication — including
+      a coaxial 3-RRR spherical parallel manipulator (NJIT URI seed-grant finalist).
+    </div>
   </div>
 </div>
 

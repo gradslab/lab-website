@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Path Following for UAVs
-description: Path-invariant control for drones and cable-suspended payloads.
+title: Control & Stability on Lie Groups
+description: Geometric controllers and Lyapunov stability analysis on SO(n) and matrix Lie groups.
 img: assets/img/3.jpg
 importance: 3
 category: geometric-control

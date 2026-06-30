@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Geometric Control of Stochastic Systems
-description: Geometric control of stochastic dynamical systems via differential geometry.
+title: Schrödinger Bridges on Lie Groups
+description: Geometric stochastic optimal control for density steering on SO(2) and compact Lie groups.
 img: assets/img/7.jpg
 importance: 1
 category: learning-dynamics

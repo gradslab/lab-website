@@ -1,6 +1,6 @@
 ---
 layout: about
-title: home
+title: Home
 permalink: /
 subtitle: Geometry, Robotics, and Dynamical Systems (GRaDS) Lab — Department of Mechanical and Industrial Engineering, New Jersey Institute of Technology.
 
@@ -9,9 +9,11 @@ subtitle: Geometry, Robotics, and Dynamical Systems (GRaDS) Lab — Department o
 selected_papers: false
 social: true # shows the social icons (GitHub, YouTube, …) at the bottom of the homepage
 
-# Show latest news on the homepage (pulls from the _news/ folder).
+# Latest news is rendered in the page body below (with a capitalized "News" heading),
+# so the layout's own lowercase news section is disabled here. limit/scrollable are
+# still read by the news include below.
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true # adds a scroll bar if there are more than 3 news items
   limit: 4 # number of news items to show on the homepage
 
@@ -42,30 +44,34 @@ latest_posts:
 <h2>Research</h2>
 <div class="research-cards">
   <a class="research-card" href="{{ '/projects/#geometric-control' | relative_url }}">
-    <img src="{{ '/assets/img/3.jpg' | relative_url }}" alt="Geometric control (placeholder)">
+    <img src="{{ '/assets/img/3.jpg' | relative_url }}" alt="Geometric and nonlinear control">
     <div class="body">
-      <h3>Geometric &amp; Hybrid Control</h3>
-      <p>Geometric and hybrid controllers for robots and drones, designed on the
-      manifolds and Lie groups that describe their motion.</p>
+      <h3>Geometric &amp; Nonlinear Control</h3>
+      <p>Controllers built on the geometry of motion — feedback linearization,
+      transverse feedback linearization, and control on Lie groups and manifolds.</p>
     </div>
   </a>
   <a class="research-card" href="{{ '/projects/#safe-autonomy' | relative_url }}">
-    <img src="{{ '/assets/img/5.jpg' | relative_url }}" alt="Safe autonomy (placeholder)">
+    <img src="{{ '/assets/img/5.jpg' | relative_url }}" alt="Safe and path-invariant autonomy">
     <div class="body">
-      <h3>Safe &amp; Reliable Autonomy</h3>
-      <p>Safety-critical control — control barrier functions, feedback linearization,
-      and decentralized multi-robot coordination — for dependable autonomy.</p>
+      <h3>Safe &amp; Path-Invariant Autonomy</h3>
+      <p>Safety-critical and path-invariant control — control barrier functions, hybrid
+      control, and robustness to disturbances and cyber attacks.</p>
     </div>
   </a>
   <a class="research-card" href="{{ '/projects/#learning-dynamics' | relative_url }}">
-    <img src="{{ '/assets/img/10.jpg' | relative_url }}" alt="Learning and dynamics (placeholder)">
+    <img src="{{ '/assets/img/10.jpg' | relative_url }}" alt="Stochastic and learning-based control">
     <div class="body">
-      <h3>Stochastic &amp; Learning Dynamics</h3>
-      <p>Geometric control of stochastic dynamical systems and learning-based methods
-      for efficient, adaptive robot behavior.</p>
+      <h3>Stochastic &amp; Learning-Based Control</h3>
+      <p>Stochastic optimal control and learning for control — Schrödinger bridges on
+      Lie groups and learning Lyapunov certificates for stability.</p>
     </div>
   </a>
 </div>
+
+<!-- ===================== LATEST NEWS ===================== -->
+<h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a></h2>
+{% include news.liquid limit=true %}
 
 <script>
   (function () {

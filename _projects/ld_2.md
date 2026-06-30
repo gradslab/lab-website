@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Schrödinger Bridges on Lie Groups
-description: Optimal stochastic steering over compact connected Lie groups.
+title: Stochastic Optimal Control
+description: Optimal steering of dynamical systems under uncertainty.
 img: assets/img/9.jpg
 importance: 2
 category: learning-dynamics

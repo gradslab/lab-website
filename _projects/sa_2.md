@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Singularity-Free Feedback Linearization
-description: Feedback linearization for nonholonomic mobile robots without singularities.
+title: Path Invariance under Cyber Attacks
+description: Guaranteed path invariance for quadrotor systems under cyber attacks.
 img: assets/img/5.jpg
 importance: 2
 category: safe-autonomy

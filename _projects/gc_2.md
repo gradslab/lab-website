@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hybrid Geometric Control
-description: Hybrid controllers for robust global stabilization on manifolds.
+title: Singularity-Free Trajectory Tracking
+description: QP-based feedback linearization for unicycle robots without singularities.
 img: assets/img/2.jpg
 importance: 2
 category: geometric-control
