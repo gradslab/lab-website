@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-05-01 10:00:00-0400
+date: 2026-05-02 09:00:00-0400
 inline: true
 related_posts: false
 ---
 
-The lab is recruiting motivated students. :robot: _(Placeholder news item.)_
+Hamza Mahmood and Hamza Tariq present posters at the 3rd Northeast Systems and Control Workshop (NESCW) at Princeton.

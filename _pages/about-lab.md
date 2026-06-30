@@ -20,11 +20,10 @@ safety-critical autonomous systems. Our work brings together differential geomet
 nonlinear and hybrid systems theory, optimization, and stochastic dynamics to build
 robots that operate safely, reliably, and efficiently in the real world.
 
-The lab is actively **recruiting** students interested in nonlinear, geometric, and
-hybrid control and their applications in robotics and drones.
-
 ### Contact
 
 Department of Mechanical and Industrial Engineering <br>
+Mechanical and Industrial Engineering Center, Suite 204 <br>
 New Jersey Institute of Technology <br>
-Newark, NJ <em>(placeholder address)</em>
+University Heights, Newark, NJ 07102 <br>
+Phone: (973) 596-3333

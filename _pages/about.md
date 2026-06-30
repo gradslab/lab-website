@@ -15,7 +15,7 @@ social: true # shows the social icons (GitHub, YouTube, …) at the bottom of th
 announcements:
   enabled: false
   scrollable: true # adds a scroll bar if there are more than 3 news items
-  limit: 4 # number of news items to show on the homepage
+  limit: 5 # number of news items to show on the homepage
 
 latest_posts:
   enabled: false
