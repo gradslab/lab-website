@@ -15,3 +15,8 @@ node_modules/
 output/playwright/
 test-results/
 vendor
+
+# Source research PDFs live under assets/img/ locally but are not served on the
+# site (papers are linked to arXiv). Keep them out of the repo to avoid bloat.
+assets/img/grads lab research papers/
+assets/img/**/*.pdf

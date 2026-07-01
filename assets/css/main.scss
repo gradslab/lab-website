@@ -210,6 +210,84 @@ html[data-theme="dark"] {
   flex: 1 1 auto;
 }
 
+/* ---- Research (projects) index: intro lede ---- */
+.research-lede {
+  font-size: 1.08rem;
+  line-height: 1.65;
+  color: var(--global-text-color);
+  max-width: 48rem;
+  margin: 0.5rem 0 2rem;
+}
+
+/* ---- Project detail pages: media, captions, links ---- */
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0.5rem 0 1.75rem;
+}
+.project-meta .btn-link {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--grads-red);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--grads-red);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.project-meta .btn-link:hover {
+  background: var(--grads-red);
+  color: #fff;
+}
+
+.project-media {
+  margin: 1.75rem 0;
+}
+.project-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.14);
+  display: block;
+  background: var(--global-card-bg-color);
+}
+.project-media .media-caption,
+.media-duo figcaption {
+  font-size: 0.83rem;
+  line-height: 1.45;
+  color: var(--global-text-color-light);
+  text-align: center;
+  margin: 0.55rem auto 0;
+  max-width: 42rem;
+}
+
+/* side-by-side comparison media (e.g. standard vs. proposed controller) */
+.media-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.1rem;
+  margin: 1.75rem 0;
+}
+.media-duo figure {
+  margin: 0;
+}
+.media-duo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.14);
+  display: block;
+  background: var(--global-card-bg-color);
+}
+@media (max-width: 640px) {
+  .media-duo {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---- 5. People grid ---- */
 .people-section h2 {
   border-bottom: 2px solid var(--grads-red);

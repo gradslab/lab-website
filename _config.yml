@@ -444,7 +444,10 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
-    - ".gif"
+    # NOTE: ".gif" is intentionally omitted. ImageMagick converts animated GIFs to
+    # single-frame (static) .webp, which freezes the animation on project cards.
+    # Instead, pre-generated animated .webp variants (…-480.webp / …-800.webp) are
+    # committed next to each .gif so figure.liquid serves the animated webp directly.
   output_formats:
     webp: "-auto-orient -quality 85"
 

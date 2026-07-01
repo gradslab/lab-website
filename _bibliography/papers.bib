@@ -20,6 +20,7 @@
   journal     = {IEEE Control Systems Letters (L-CSS)},
   year        = {2026},
   arxiv       = {2606.19669},
+  code        = {https://github.com/mBarreau/LyapunovSO},
   abstract    = {Establishing stability guarantees for dynamical systems on Lie groups is a fundamental challenge, as classical Lyapunov methods developed for Euclidean spaces do not directly transfer to curved geometries. In this paper, we propose a framework for learning maximal Lyapunov functions for systems evolving on the special orthogonal group SO(n). Theoretically, we introduce a neural Lyapunov architecture based on the logarithmic map with proven approximation capabilities, and we formulate the learning problem via a Zubov-type characterization of the maximal region of attraction. A key technical contribution is the derivation of explicit, numerically tractable formulas for the derivative of the logarithmic map, enabling training through a two-phase algorithm that balances computational efficiency and accuracy. Empirically, we validate the approach on a low-dimensional nonlinear system.}
 }
 
@@ -64,11 +65,14 @@
 @article{mahmood2026schrodinger,
   abbr        = {L-CSS},
   bibtex_show = {true},
+  selected    = {true},
   title       = {Schr{\"o}dinger Bridge Over a Compact Connected Lie Group},
-  author      = {Mahmood, Hamza and Halder, A. and Akhtar, Adeel},
+  author      = {Mahmood, Hamza and Halder, Abhishek and Akhtar, Adeel},
   journal     = {IEEE Control Systems Letters (L-CSS)},
   year        = {2026},
-  abstract    = {To be added.}
+  arxiv       = {2603.14049},
+  code        = {https://github.com/gradslab/SbpLieGroups},
+  abstract    = {This work studies the Schrodinger bridge problem for the kinematic equation on a compact connected Lie group. The objective is to steer a controlled diffusion between given initial and terminal densities supported over the Lie group while minimizing the control effort. We develop a coordinate-free formulation of this stochastic optimal control problem that respects the underlying geometric structure of the Lie group, thereby avoiding limitations associated with local parameterizations or embeddings in Euclidean spaces. We establish the existence and uniqueness of solution to the corresponding Schrodinger system. Our results are constructive in that they derive a geometric controller that optimally interpolates probability densities supported over the Lie group. To illustrate the results, we provide numerical examples on SO(2) and SO(3).}
 }
 
 @inproceedings{mahmood2025path,
@@ -79,7 +83,8 @@
   author      = {Mahmood, Hamza and Ali, Usman and Akhtar, Adeel},
   booktitle   = {2025 American Control Conference (ACC)},
   year        = {2025},
-  abstract    = {To be added.}
+  video       = {https://youtu.be/orp1g-pIFrM},
+  abstract    = {This paper presents a path-following controller for a quadrotor system to guarantee safe maneuvers, in terms of forward path invariance, in the presence of cyber-physical attacks. We assume that an adversarial agent can control any one of the rotors through a false data injection (FDI) type of attack. A feedback controller is designed using transverse feedback linearization which guarantees that the system follows a class of smooth curves under FDI attacks. Our proposed controller is computationally efficient, with a closed-form analytical expression, that not only mitigates the effect of bounded malicious signal but also ensures mission success. We provide theoretical guarantees of forward path invariance under FDI attacks with realistic assumptions and demonstrate the effectiveness of our approach through simulation.}
 }
 
 @article{wang2025safe,

@@ -44,27 +44,27 @@ latest_posts:
 <h2>Research</h2>
 <div class="research-cards">
   <a class="research-card" href="{{ '/projects/#geometric-control' | relative_url }}">
-    <img src="{{ '/assets/img/3.jpg' | relative_url }}" alt="Geometric and nonlinear control">
+    <img src="{{ '/assets/img/pics_and_gifs/conv-800.webp' | relative_url }}" alt="Quadrotor following a geometric path" loading="lazy">
     <div class="body">
-      <h3>Geometric &amp; Nonlinear Control</h3>
-      <p>Controllers built on the geometry of motion — feedback linearization,
-      transverse feedback linearization, and control on Lie groups and manifolds.</p>
+      <h3>Geometric Path Following &amp; Feedback Linearization</h3>
+      <p>Making robots converge to and stay on a geometric path — via transverse feedback
+      linearization and singularity-free quadratic-program designs for unicycles, quadrotors, and aircraft.</p>
     </div>
   </a>
   <a class="research-card" href="{{ '/projects/#safe-autonomy' | relative_url }}">
-    <img src="{{ '/assets/img/5.jpg' | relative_url }}" alt="Safe and path-invariant autonomy">
+    <img src="{{ '/assets/img/pics_and_gifs/fixed_v_sinusoidal_manifold-800.webp' | relative_url }}" alt="A trajectory staying invariant on a path-following manifold" loading="lazy">
     <div class="body">
-      <h3>Safe &amp; Path-Invariant Autonomy</h3>
-      <p>Safety-critical and path-invariant control — control barrier functions, hybrid
-      control, and robustness to disturbances and cyber attacks.</p>
+      <h3>Safe &amp; Resilient Autonomy</h3>
+      <p>Guaranteeing a system never leaves its path once reached — control barrier functions and
+      hybrid control for forward path invariance under obstacles, noise, and cyber-attacks.</p>
     </div>
   </a>
   <a class="research-card" href="{{ '/projects/#learning-dynamics' | relative_url }}">
-    <img src="{{ '/assets/img/10.jpg' | relative_url }}" alt="Stochastic and learning-based control">
+    <img src="{{ '/assets/img/pics_and_gifs/anm1-800.webp' | relative_url }}" alt="Probability density steered on the circle SO(2)" loading="lazy">
     <div class="body">
-      <h3>Stochastic &amp; Learning-Based Control</h3>
-      <p>Stochastic optimal control and learning for control — Schrödinger bridges on
-      Lie groups and learning Lyapunov certificates for stability.</p>
+      <h3>Geometric Stochastic Control &amp; Learning on Lie Groups</h3>
+      <p>Coordinate-free density steering (Schrödinger bridges) and learned neural Lyapunov
+      certificates directly on rotation groups like SO(2) and SO(3).</p>
     </div>
   </a>
 </div>
