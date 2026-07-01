@@ -182,14 +182,38 @@ html[data-theme="dark"] {
   color: var(--global-text-color-light);
 }
 
-/* ---- Projects page: uniform, symmetrical cards ---- */
-.projects .row > .col {
+/* ---- Projects page: uniform, symmetrical cards ----
+   The v1 (Tailwind) theme dropped Bootstrap's grid, so `row row-cols-md-3`
+   no longer sizes the columns. We lay the card groups out with our own CSS
+   grid instead. Target only the *direct* `.row` children of `.projects`
+   (the card groups) so the inner `.row` used for the GitHub icon is untouched. */
+.projects > .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 0 0 1.25rem;
+}
+@media (max-width: 900px) {
+  .projects > .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .projects > .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projects > .row > .col {
   display: flex;
+  padding-bottom: 0;
+  min-width: 0; /* let grid items shrink instead of overflowing */
 }
 .projects .col > a {
   display: flex;
   width: 100%;
   color: inherit;
+  text-decoration: none;
 }
 .projects .card {
   width: 100%;
@@ -197,12 +221,16 @@ html[data-theme="dark"] {
   display: flex;
   flex-direction: column;
 }
-.projects .card figure {
+.projects .card figure,
+.projects .card picture {
   margin: 0;
+  display: block;
+  width: 100%;
 }
+/* fixed, uniform thumbnail size for every card (overrides the img's height="auto") */
 .projects .card-img-top {
   width: 100%;
-  height: 200px;
+  height: 190px;
   object-fit: cover;
   display: block;
 }
