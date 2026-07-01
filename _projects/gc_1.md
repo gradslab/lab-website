@@ -5,7 +5,6 @@ description: Quasi-static transverse feedback linearization (QSTFL) that makes a
 img: assets/img/pics_and_gifs/conv.gif
 importance: 1
 category: geometric-control
-github: https://gitlab.com/a5akhtar/quasistatic-tfl-uav/
 ---
 
 <div class="project-meta">

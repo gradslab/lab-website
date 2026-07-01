@@ -5,7 +5,6 @@ description: A physics-informed neural framework that learns maximal Lyapunov fu
 img: assets/img/pics_and_gifs/learned_lyapunov_roa.jpg
 importance: 3
 category: learning-dynamics
-github: https://github.com/mBarreau/LyapunovSO
 ---
 
 <div class="project-meta">

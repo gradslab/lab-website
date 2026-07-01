@@ -5,7 +5,6 @@ description: Generalizing coordinate-free density steering from SO(2) to any com
 img: assets/img/pics_and_gifs/sbp_lie_density.jpg
 importance: 2
 category: learning-dynamics
-github: https://github.com/gradslab/SbpLieGroups
 ---
 
 <div class="project-meta">

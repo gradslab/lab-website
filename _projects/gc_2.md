@@ -5,7 +5,6 @@ description: A relaxed quadratic-program reformulation of dynamic feedback linea
 img: assets/img/pics_and_gifs/dfl_qp_tracking.gif
 importance: 2
 category: geometric-control
-github: https://gradslab.github.io/DFL_QP_Unicycle/
 ---
 
 <div class="project-meta">

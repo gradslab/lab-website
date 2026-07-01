@@ -5,7 +5,6 @@ description: A coordinate-free solution to the Schrödinger bridge problem on th
 img: assets/img/pics_and_gifs/anm1.gif
 importance: 1
 category: learning-dynamics
-github: https://gitlab.com/a5akhtar/sbp
 ---
 
 <div class="project-meta">
